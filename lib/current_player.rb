@@ -1,6 +1,5 @@
 def turn_count (board)
-turn = array.new
-turn(board).count { |x| x != ""||" "||nil }
+board.count { |x| x == "X"||"O" }
 end
 
 def current_player(board)
